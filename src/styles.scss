@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i|Varela+Round');
+
+$gris-1 : #666666;
+$verde-1: #10b967;
+$openSans: 'Open Sans', sans-serif;
+$varelaRound: 'Varela Round', sans-serif;
+
+
+
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    &:hover{
+        transition: color 1s;
+    }
+}
+
+.sociales{
+    margin-right: 30px;
+    i{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        &.tw{
+            background: url('/assets/img/ico-tw.jpg');
+        }
+        &.fb{
+            background: url('/assets/img/ico-fb.jpg');
+        }
+        &.ins{
+            background: url('/assets/img/ico-ins.jpg');
+        }
+    }
+
+    a{
+        span{
+            color: $gris-1;
+            font-size: 14px;
+        }
+    }
+}
+
+.location{
+    font-size: 14px;
+    color: $gris-1;
+    padding-left: 15px;
+    background: url('/assets/img/ico-pin.jpg') left top no-repeat;
+
+
+    
+}

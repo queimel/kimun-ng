@@ -1,0 +1,33 @@
+<form  (submit)="sendEmail(message)">
+  <div class="d-flex justify-content-between top flex-sm-row flex-column">
+      <div>
+          <input type="text" name="name" placeholder="nombre" [(ngModel)]="message.name" class="form-control"
+          required minlength="4">
+      </div>
+      <div>
+          <input type="text" name="email" placeholder="email" [(ngModel)]="message.email" class="form-control" email required >
+      </div>
+      <div>
+          <input type="text" name="subject" placeholder="asunto" [(ngModel)]="message.subject" class="form-control"  required minlength="4" >
+      </div>
+  </div>
+  <div class="bottom">
+      <textarea  id="" cols="30" rows="10" placeholder="mensaje" name="message" [(ngModel)]="message.message"></textarea>
+      <div class="d-flex justify-content-between">
+          <div class="bottom-form d-flex justify-content-between">
+              <div class="sociales d-none d-sm-block" >
+                  <!--<i class="tw"></i>-->
+                  <a href="https://www.facebook.com/KimunHuertasEducativas" target="_blank"><i class="fb"></i></a>
+                  <!--<i class="ins"></i>-->
+              </div>
+
+
+
+              <div class="location d-none d-sm-block">Ubicanos en: Padre Mariano 391, Of. 704.</div>
+          </div>
+          <div>
+              <button type="submit">Enviar</button>
+          </div>
+      </div>
+  </div>        
+</form>
